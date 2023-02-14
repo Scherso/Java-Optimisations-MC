@@ -12,13 +12,13 @@ The GraalVM distribution of Java, is made by Oracle, and is equipped with an [ad
 
 For the Enterprise Edition:
 
-```yml
+```java
 -Xverify:none -Xss2M -Xmn1G -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:MaxGCPauseMillis=40 -XX:+AlwaysActAsServerClassMachine -XX:MaxTenuringThreshold=1 -XX:SurvivorRatio=32 -XX:G1HeapRegionSize=8M -XX:G1MixedGCCountTarget=4 -XX:G1MixedGCLiveThresholdPercent=90 -XX:-UsePerfData -XX:+PerfDisableSharedMem -XX:+UseLargePages -XX:+AlwaysPreTouch -XX:+UseFastStosb -XX:+EliminateLocks -Dgraal.TuneInlinerExploration=1 -XX:+EagerJVMCI
 ```
 
 For the Community Edition / other JRE:
 
-```yml
+```java
 -Xverify:none -Xss2M -Xmn1G -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:MaxGCPauseMillis=40 -XX:+AlwaysActAsServerClassMachine -XX:MaxTenuringThreshold=1 -XX:SurvivorRatio=32 -XX:G1HeapRegionSize=8M -XX:G1MixedGCCountTarget=4 -XX:G1MixedGCLiveThresholdPercent=90 -XX:-UsePerfData -XX:+PerfDisableSharedMem -XX:+UseLargePages -XX:+AlwaysPreTouch -XX:+UseFastStosb -XX:+EliminateLocks -XX:+EnableJVMCIProduct -XX:+EnableJVMCI -XX:+UseJVMCICompiler -XX:+EagerJVMCI
 ```
 
